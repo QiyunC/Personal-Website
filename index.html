@@ -9,70 +9,101 @@
     <link rel="icon" href="https://cardadfar.github.io/stuco_webdev_website/assets/files/cool-icon.png">                    <!-- Insert Icon -->
     <script src="./Give Me a Title!_files/jquery.min.js"></script>
 </head>
-<body>
+
+<body class="background">
+
 	<style type='text/css'>
-		.bunny{
-			text-align: center
-			width: 200px;
+		.background {
+			background-image: url("background.jpg");
+			background-size:cover;}
+
+		.button-list {
+			width: 80%;
+			margin-left: 10%;
+			height: 47px;
+			text-align: center;
 		}
-		.box {
-			width: 50%;
-			margin-left: 25%
+
+		.button {
+			display: inline-block;
+			line-height: calc(var(--nav-height) / 2);
+			background: gray;
+			color:white;
+			width: 150px;
+			margin-left: 40px;
+			margin-right: 40px;
 		}
+
+		.button > .label {
+			margin-bottom: 5px;
+		}
+
+		.button:hover {
+			background: pink;
+			color: white;
+			transition: all 0.25s;
+		}
+
+		.line {
+			background: white;
+			width: 0%;
+			height: 1px;
+			margin-left: 35%;
+			margin-bottom: 10px;
+		}
+
+		.button:hover .line {
+			width: 30%;
+			transition: all 0.25s;
+		}
+
+		.hidden {
+			font-size: 14px;
+			color: white;
+			max-height: 0;
+			opacity: 0;
+			margin: 0;
+		}
+
+		.button:hover .hidden {
+			color: #f7f7f7;
+			max-height: unset;
+			margin: 10px;
+			opacity: 1;
+			transition: all 0.25s;
+		}
+
 		.box_img {
 			text-align: center;
 		}
-		.input_style {
-			width: 100%;
-		}
+		
 	</style>
-	<p> Lets Build a Great Site Yo!~ </p>
 
-	<div class=box>
-		<style>
-			.orange {
-				background-color: orange;
-				width: 100px;
-				height: 100px;
-				position: sticky;
-				top: 0px;
-				}
-			.blue {
-				background-color: blue;
-				width: 100px;
-				height: 100px;
-				position: sticky;
-				top: 100px;}
-			</style>
-			<div class=orange> hello </div>
-			<div class=blue> hello </div>
+	<div class="button-list">
+    	<div class="button" id="button-01">
+    		<p class="label"> Home </p>
+    		<div class="line"></div>
+    		<p class="hidden"> - pillowforts &amp; fun - </p>
+    	</div>
+    	<div class="button" id="button-02">
+    		<p class="label"> Work </p>
+    		<div class="line"></div>
+    		<p class="hidden"> - 40 hr weeks uggh - </p>
+    	</div>
+    	<div class="button" id="button-03">
+    		<p class="label"> School </p>
+    		<div class="line"></div>
+    		<p class="hidden"> - good ol' days - </p>
+    	</div>
+    </div>
 
-
-
-		<div class=box_img>
+<!-- 		<div class=box_img>
 			<img src="https://static.boredpanda.com/blog/wp-content/uploads/2015/03/My-bunnies-are-my-models8__880.jpg">
-		</div>
-		<p> Rabbits are small mammals in the family Leporidae of the order Lagomorpha (along with the hare and the pika). Oryctolagus cuniculus includes the European rabbit species and its descendants, the world's 305 breeds[1] of domestic rabbit. Sylvilagus includes 13 wild rabbit species, among them the seven types of cottontail. The European rabbit, which has been introduced on every continent except Antarctica, is familiar throughout the world as a wild prey animal and as a domesticated form of livestock and pet. With its widespread effect on ecologies and cultures, the rabbit (or bunny) is, in many areas of the world, a part of daily life—as food, clothing, a companion, and as a source of artistic inspiration.</p>
+		</div> -->
+		<p> Rabbits are small mammals.
+		</p>
 		<input class=input_style type='text' name='hello' placeholder="nice shoes today">
-	
-	<!-- padding -> margin -> border -->
-	<style>
-		.space-hogger {
-			background-color: pink;
-			color: white;
-			text-align: center;
-			line-height: 200px;
-			/*width: 200px;*/
-			height: 200px;
-			padding: 100px;
-			margin: 100px;
-			border:5px solid purple;
-			margin-left: 25%
-			width:50%;
-
-		}
-	</style>
-	<div class=space-hogger> All this space to myself!</div>
+		
 	 </div>
 
 
@@ -80,7 +111,7 @@
  	
 
 
-    <script type="text/javascript" src="./Give Me a Title!_files/interactions.js"></script>    <!-- Insert JQuery Script -->
+  <!--   <script type="text/jav<!-- ascript" src="./Give Me a Title!_files/interactions.js"></script>    <!-- Insert JQuery Script -->
 
 
 
