@@ -6,6 +6,7 @@
     <title>Give Me a Title!</title>                           <!-- Give Title -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./Give Me a Title!_files/style.css">  <!-- Insert StyleSheet -->
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
     <link rel="icon" href="https://cardadfar.github.io/stuco_webdev_website/assets/files/cool-icon.png">                    <!-- Insert Icon -->
     <script src="./Give Me a Title!_files/jquery.min.js"></script>
 </head>
@@ -87,45 +88,63 @@
 
 		.box {
 			text-align: center;
-			/*height: 10%;*/
+			padding-left: 20%;
+			padding-right: 20%;
+			padding-bottom: 20%;
 		}
 
-	/*	.box_img {
-		  border: 1px solid #ddd;
-		  border-radius: 4px;
-		  padding: 5px;
-		  width: 150px;
-		  text-align: center;
 
-		}*/
 		.box_img {
 		  display: block;
-		  margin-left: auto;
-		  margin-right: auto;
-		  width: 25%;
-		  height: 25%;
+/*		  margin-left: auto;
+		  margin-right: auto;*/
+		  weight: 200px;
+		  width: 200px;
+		  border-radius: 150px;
+		  max-width: 100%;
+		  float: center;
+  		  text-align: center;
 
+
+		}
+		/*p stands for paragraph*/
+		/*paragraph -> class (.) -> id (#) */
+		p {
+			font-family: 'Yeon Sung';
+			font-size: 26px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #0C8C88; 
+		}
+
+		.text {
+			font-family: "Lucida Console";
+			font-size: 20px;
 		}
 
 		.box_img:hover {
-		  box-shadow: 0 0 10px 1px rgba(0, 140, 186, 0.5);
+		  /*box-shadow: 0 0 10px 1px rgba(0, 140, 186, 0.5);*/
+		  box-shadow: 0 0 20px 1px #f7b37e;
 		}
 	</style>
 
 	<!-- background -->
 	<div class="button-list">
     	<div class="button" id="button-01">
-    		<p class="label"> About </p>
+    		<!-- a is for link -->
+    		<p class="label"> <a href="google.com">About</a> </p>
     		<div class="line"></div>
     		<p class="hidden"> - Hiya! - </p>
     	</div>
     	<div class="button" id="button-02">
-    		<p class="label"> Photography </p>
+    		<p class="label"> <a href="google.com">Photography</a> </p>
     		<div class="line"></div>
     		<p class="hidden"> - Beginner's Work - </p>
     	</div>
     	<div class="button" id="button-03">
-    		<p class="label"> Work </p>
+    		<p class="label"> <a href="google.com">Work</a> </p>
     		<div class="line"></div>
     		<p class="hidden"> - Yep - </p>
     	</div>
@@ -134,14 +153,17 @@
     <!-- main -->
 
 	<div class=box>
-		<p> Rabbits are small mammals.
-		</p>
-		<div class=box_img>
-			<img src="my.jpg">
-		</div>
 		
+		<div align="center">
+			<img class=box_img src="my-stuco.jpg">
+		</div>
+		<p id="intro"> Hi I'm Qiyun!
+		</p>
 	 </div>
 
+
+	<p class=text>
+	Bunnies are cute. </p>
 
 
  	
